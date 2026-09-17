@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Riya Sharma | Civil Engineer & Researcher</title>
 
-  <meta name="description"
-    content="Riya Sharma — Civil Engineer and researcher interested in sustainable and low-carbon construction materials, industrial hemp-based building materials, circular economy, resource recovery, and sustainable infrastructure.">
+  <meta name="description" content="Riya Sharma — Civil Engineer from Nepal with research experience in municipal solid waste characterization, resource recovery, sustainable construction materials and circular economy.">
+  <meta name="author" content="Riya Sharma">
 
   <style>
-
-    /* =========================
-       GENERAL
-    ========================= */
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
-    :root {
-      --primary: #183b56;
-      --secondary: #39758f;
-      --accent: #5c8d89;
-      --light: #f4f7f8;
-      --white: #ffffff;
-      --dark: #18232d;
-      --text: #52616b;
-      --border: #dce5e9;
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
       line-height: 1.7;
-      background: var(--white);
+      color: #24313a;
+      background: #f7faf9;
     }
 
     a {
@@ -46,95 +32,141 @@
       color: inherit;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1150px;
-      margin: auto;
+    img {
+      max-width: 100%;
+      display: block;
     }
-
 
     /* =========================
        NAVIGATION
     ========================= */
 
-    nav {
+    header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.97);
-      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid #e3e9e6;
+      backdrop-filter: blur(10px);
     }
 
-    .nav-container {
-      height: 72px;
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .logo {
-      color: var(--primary);
-      font-size: 1.4rem;
-      font-weight: 700;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #173f35;
     }
 
     .nav-links {
       display: flex;
+      gap: 25px;
       list-style: none;
-      gap: 23px;
+      font-size: 0.95rem;
+      font-weight: 600;
     }
 
     .nav-links a {
-      color: var(--dark);
-      font-size: 0.9rem;
+      color: #40504b;
       transition: 0.3s;
     }
 
     .nav-links a:hover {
-      color: var(--secondary);
+      color: #24735c;
     }
 
-    .menu-btn {
-      display: none;
-      font-size: 1.6rem;
-      cursor: pointer;
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+      padding: 90px 25px;
     }
 
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: #2d8067;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      color: #173f35;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .section-intro {
+      max-width: 750px;
+      color: #60706b;
+      margin-bottom: 45px;
+    }
 
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      background: linear-gradient(135deg, #eef5f7, #ffffff);
-      padding: 105px 0 95px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(135deg, #edf7f3 0%, #f8fbfa 55%, #e8f3ef 100%);
     }
 
     .hero-content {
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 25px;
       display: grid;
-      grid-template-columns: 1.5fr 0.7fr;
-      gap: 70px;
+      grid-template-columns: 1.45fr 0.75fr;
+      gap: 60px;
       align-items: center;
     }
 
+    .hero-label {
+      color: #2d8067;
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
     .hero h1 {
-      color: var(--primary);
-      font-size: 3.6rem;
-      line-height: 1.1;
-      margin-bottom: 18px;
+      font-size: clamp(3rem, 7vw, 5.2rem);
+      line-height: 1;
+      color: #163d34;
+      margin-bottom: 20px;
     }
 
     .hero h2 {
-      color: var(--secondary);
       font-size: 1.35rem;
-      font-weight: 500;
+      font-weight: 600;
+      color: #4b625b;
       margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 720px;
+      max-width: 700px;
       font-size: 1.05rem;
-      margin-bottom: 28px;
+      color: #596b65;
+      margin-bottom: 30px;
     }
 
     .hero-buttons {
@@ -146,79 +178,67 @@
     .btn {
       display: inline-block;
       padding: 12px 22px;
-      border-radius: 6px;
-      border: 1px solid var(--primary);
-      font-weight: 600;
+      border-radius: 8px;
+      font-weight: 700;
       transition: 0.3s;
     }
 
     .btn-primary {
-      background: var(--primary);
+      background: #24735c;
       color: white;
     }
 
     .btn-primary:hover {
-      background: var(--secondary);
-      border-color: var(--secondary);
+      background: #195945;
+      transform: translateY(-2px);
     }
 
-    .btn-outline {
-      color: var(--primary);
+    .btn-secondary {
+      border: 1.5px solid #24735c;
+      color: #24735c;
+      background: white;
     }
 
-    .btn-outline:hover {
-      background: var(--primary);
-      color: white;
+    .btn-secondary:hover {
+      background: #edf7f3;
+      transform: translateY(-2px);
     }
 
-    .profile-box {
-      display: flex;
-      justify-content: center;
-    }
-
-    .profile-circle {
-      width: 235px;
-      height: 235px;
+    .profile-placeholder {
+      width: 280px;
+      height: 280px;
       border-radius: 50%;
-      background: var(--primary);
-      color: white;
+      background: #dcece6;
+      border: 8px solid white;
+      box-shadow: 0 15px 45px rgba(30, 80, 65, 0.12);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 5.2rem;
-      font-weight: 700;
-      box-shadow: 0 18px 45px rgba(24,59,86,0.18);
-    }
-
-
-    /* =========================
-       SECTIONS
-    ========================= */
-
-    section {
-      padding: 80px 0;
-    }
-
-    section:nth-child(even) {
-      background: var(--light);
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-title h2 {
-      color: var(--primary);
-      font-size: 2rem;
-      margin-bottom: 9px;
-    }
-
-    .section-title p {
-      max-width: 720px;
       margin: auto;
+      color: #24735c;
+      font-size: 5rem;
+      font-weight: 800;
     }
 
+    /*
+      TO ADD YOUR PHOTO LATER:
+
+      Replace the profile-placeholder div with:
+
+      <img src="profile.jpg" alt="Riya Sharma"
+           class="profile-photo">
+
+      Then add:
+
+      .profile-photo {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 8px solid white;
+        box-shadow: 0 15px 45px rgba(30, 80, 65, 0.12);
+      }
+    */
 
     /* =========================
        ABOUT
@@ -226,15 +246,17 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: 1.4fr 0.8fr;
       gap: 50px;
+      align-items: start;
     }
 
     .about-text p {
-      margin-bottom: 17px;
+      margin-bottom: 18px;
+      color: #586963;
     }
 
-    .highlights {
+    .about-highlights {
       display: grid;
       gap: 15px;
     }
@@ -242,16 +264,21 @@
     .highlight {
       background: white;
       padding: 20px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 12px;
+      border: 1px solid #e3ebe7;
+      box-shadow: 0 6px 20px rgba(30, 70, 60, 0.04);
     }
 
     .highlight h3 {
-      color: var(--primary);
+      color: #24735c;
       font-size: 1rem;
       margin-bottom: 5px;
     }
 
+    .highlight p {
+      font-size: 0.9rem;
+      color: #687873;
+    }
 
     /* =========================
        RESEARCH INTERESTS
@@ -260,59 +287,62 @@
     .research-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 20px;
     }
 
     .research-card {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 9px;
       padding: 28px;
+      border: 1px solid #e3ebe7;
+      border-radius: 14px;
       transition: 0.3s;
     }
 
     .research-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(25, 75, 60, 0.08);
+    }
+
+    .research-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
     }
 
     .research-card h3 {
-      color: var(--primary);
-      font-size: 1.1rem;
+      color: #214c40;
       margin-bottom: 10px;
+      font-size: 1.1rem;
     }
 
+    .research-card p {
+      color: #687873;
+      font-size: 0.92rem;
+    }
 
     /* =========================
-       RESEARCH EXPERIENCE
+       FEATURED RESEARCH
     ========================= */
 
-    .featured {
+    .featured-research {
+      background: #edf7f3;
+    }
+
+    .research-feature-box {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 16px;
       padding: 40px;
+      border: 1px solid #dce9e3;
     }
 
-    .featured h3 {
-      color: var(--primary);
-      font-size: 1.45rem;
-      line-height: 1.4;
-      margin-bottom: 8px;
+    .research-feature-box h3 {
+      color: #173f35;
+      font-size: 1.65rem;
+      margin-bottom: 15px;
     }
 
-    .venue {
-      color: var(--secondary);
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .featured ul {
-      margin: 20px 0 25px 20px;
-    }
-
-    .featured li {
-      margin-bottom: 10px;
+    .research-feature-box p {
+      color: #60706b;
+      margin-bottom: 15px;
     }
 
     .stats {
@@ -323,252 +353,309 @@
     }
 
     .stat {
-      background: var(--light);
-      padding: 20px 10px;
+      background: #f5f9f7;
+      padding: 20px;
+      border-radius: 10px;
       text-align: center;
-      border-radius: 7px;
     }
 
     .stat strong {
       display: block;
-      color: var(--primary);
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      color: #24735c;
     }
 
     .stat span {
-      font-size: 0.82rem;
+      color: #65756f;
+      font-size: 0.85rem;
     }
-
 
     /* =========================
-       PROJECTS
+       PROSPECTIVE RESEARCH
     ========================= */
 
-    .project-list {
+    .future-research {
+      background: #173f35;
+      color: white;
+    }
+
+    .future-research .section-label {
+      color: #a8d9c8;
+    }
+
+    .future-research .section-title {
+      color: white;
+    }
+
+    .future-research .section-intro {
+      color: #d4e5df;
+    }
+
+    .future-grid {
       display: grid;
-      gap: 22px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
 
-    .project {
-      background: white;
-      padding: 30px;
-      border-left: 4px solid var(--secondary);
-      border-top: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      border-radius: 7px;
+    .future-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.13);
+      padding: 28px;
+      border-radius: 14px;
     }
 
-    .project h3 {
-      color: var(--primary);
-      margin-bottom: 12px;
+    .future-card h3 {
+      margin-bottom: 10px;
+      color: #dff4eb;
     }
 
-    .project ul {
-      margin: 10px 0 0 20px;
+    .future-card p {
+      color: #c7dbd4;
+      font-size: 0.93rem;
     }
-
-    .project li {
-      margin-bottom: 8px;
-    }
-
 
     /* =========================
        EXPERIENCE
     ========================= */
 
     .timeline {
-      max-width: 900px;
-      margin: auto;
+      position: relative;
+      border-left: 2px solid #c9ddd5;
+      padding-left: 30px;
     }
 
     .timeline-item {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 28px;
-      margin-bottom: 20px;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 5px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #24735c;
+      border: 4px solid #edf7f3;
+    }
+
+    .timeline-date {
+      color: #24735c;
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin-bottom: 5px;
     }
 
     .timeline-item h3 {
-      color: var(--primary);
-      margin-bottom: 4px;
+      color: #214c40;
+      font-size: 1.25rem;
     }
 
-    .date {
-      color: var(--secondary);
+    .timeline-item h4 {
+      color: #687873;
       font-weight: 600;
-      font-size: 0.9rem;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
+    .timeline-item p {
+      color: #65746f;
+    }
 
     /* =========================
        EDUCATION
     ========================= */
 
-    .education-box {
-      max-width: 900px;
-      margin: auto;
+    .education-card {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 9px;
+      border: 1px solid #e1eae6;
       padding: 35px;
+      border-radius: 14px;
+      max-width: 850px;
     }
 
-    .education-box h3 {
-      color: var(--primary);
+    .education-card h3 {
+      color: #173f35;
       font-size: 1.4rem;
-      margin-bottom: 7px;
     }
 
+    .education-card h4 {
+      color: #24735c;
+      margin: 8px 0;
+    }
+
+    .education-card p {
+      color: #65746f;
+    }
 
     /* =========================
        SKILLS
     ========================= */
 
-    .skills-container {
+    .skill-groups {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 25px;
     }
 
-    .skill-box {
+    .skill-group {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 27px;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #e2ebe7;
     }
 
-    .skill-box h3 {
-      color: var(--primary);
-      margin-bottom: 13px;
+    .skill-group h3 {
+      color: #214c40;
+      margin-bottom: 15px;
     }
 
-    .skill-tags {
+    .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 9px;
+      gap: 8px;
     }
 
-    .skill-tag {
-      background: var(--light);
-      padding: 7px 12px;
+    .tag {
+      background: #edf7f3;
+      color: #286b57;
       border-radius: 20px;
-      font-size: 0.84rem;
+      padding: 7px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
     }
-
 
     /* =========================
        PUBLICATION
     ========================= */
 
-    .publication {
-      max-width: 900px;
-      margin: auto;
+    .publication-card {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 9px;
+      border: 1px solid #dfe9e5;
+      border-radius: 15px;
       padding: 35px;
+      max-width: 900px;
     }
 
-    .publication h3 {
-      color: var(--primary);
-      line-height: 1.5;
+    .publication-type {
+      color: #24735c;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .publication-card h3 {
+      color: #173f35;
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .publication-card p {
+      color: #65746f;
       margin-bottom: 15px;
     }
-
-    .publication a {
-      color: var(--secondary);
-      font-weight: 600;
-    }
-
 
     /* =========================
        HONORS
     ========================= */
 
     .honors {
-      max-width: 850px;
-      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     .honor {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      padding: 18px 22px;
-      margin-bottom: 12px;
+      padding: 25px;
+      border: 1px solid #e2ebe7;
+      border-radius: 12px;
     }
 
+    .honor h3 {
+      color: #214c40;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .honor p {
+      color: #687873;
+      font-size: 0.9rem;
+    }
 
     /* =========================
-       REFERENCES
+       CV
     ========================= */
 
-    .reference-note {
-      max-width: 700px;
-      margin: auto;
+    .cv-section {
+      background: #edf7f3;
       text-align: center;
-      background: white;
-      border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 8px;
     }
 
+    .cv-box {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .cv-box p {
+      color: #62736d;
+      margin-bottom: 25px;
+    }
 
     /* =========================
        CONTACT
     ========================= */
 
-    .contact {
-      text-align: center;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
     }
 
-    .contact-info {
-      margin: 25px 0;
+    .contact-info h3 {
+      color: #173f35;
+      margin-bottom: 15px;
     }
 
     .contact-info p {
-      margin-bottom: 8px;
+      color: #65746f;
+      margin-bottom: 10px;
     }
 
-    .social-links {
+    .contact-links {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 25px;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .social-link {
+    .contact-link {
+      border: 1px solid #d5e3dd;
+      padding: 9px 14px;
+      border-radius: 7px;
+      color: #24735c;
+      font-weight: 700;
+      font-size: 0.88rem;
       background: white;
-      border: 1px solid var(--border);
-      padding: 11px 20px;
-      border-radius: 6px;
-      color: var(--primary);
-      font-weight: 600;
-      transition: 0.3s;
     }
 
-    .social-link:hover {
-      background: var(--primary);
-      color: white;
+    .contact-link:hover {
+      background: #edf7f3;
     }
-
 
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      background: var(--primary);
-      color: white;
+      background: #12362e;
+      color: #cbdcd6;
       text-align: center;
       padding: 25px;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
-
 
     /* =========================
        MOBILE
@@ -576,1057 +663,837 @@
 
     @media (max-width: 850px) {
 
-      .hero-content,
-      .about-grid,
-      .skills-container {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content {
         grid-template-columns: 1fr;
+        text-align: center;
       }
 
-      .profile-box {
-        order: -1;
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
       }
 
-      .hero {
-        padding: 75px 0;
+      .hero-buttons {
+        justify-content: center;
       }
 
-      .hero h1 {
-        font-size: 2.8rem;
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
       .research-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skill-groups {
+        grid-template-columns: 1fr 1fr;
       }
 
       .stats {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-btn {
-        display: block;
-      }
-    }
-
-
-    @media (max-width: 550px) {
-
-      .container {
-        width: 92%;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .research-grid {
+      .future-grid {
         grid-template-columns: 1fr;
       }
 
+      .honors {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 65px 18px;
+      }
+
+      nav {
+        padding: 13px 18px;
+      }
+
+      .hero-content {
+        padding: 50px 18px;
+      }
+
       .hero h1 {
-        font-size: 2.35rem;
+        font-size: 3rem;
       }
 
-      .profile-circle {
-        width: 190px;
-        height: 190px;
-        font-size: 4rem;
-      }
-
-      .featured,
-      .publication,
-      .education-box {
-        padding: 25px;
+      .research-grid,
+      .skill-groups {
+        grid-template-columns: 1fr;
       }
 
       .stats {
         grid-template-columns: 1fr 1fr;
       }
 
-    }
+      .research-feature-box,
+      .publication-card,
+      .education-card {
+        padding: 25px;
+      }
 
+      .profile-placeholder {
+        width: 220px;
+        height: 220px;
+        font-size: 4rem;
+      }
+    }
   </style>
 </head>
 
-
 <body>
 
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
-
+<header>
   <nav>
 
-    <div class="container nav-container">
+    <a href="#home" class="logo">Riya Sharma</a>
 
-      <div class="logo">
-        Riya Sharma
-      </div>
-
-      <div class="menu-btn" onclick="toggleMenu()">
-        ☰
-      </div>
-
-      <ul class="nav-links" id="navLinks">
-
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#publication">Publication</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
   </nav>
+</header>
 
 
-  <!-- =========================
-       HERO
-  ========================= -->
+<!-- =========================
+     HERO
+========================= -->
 
-  <header class="hero">
+<section class="hero" id="home">
 
-    <div class="container hero-content">
+  <div class="hero-content">
 
-      <div>
+    <div>
 
-        <h1>Riya Sharma</h1>
-
-        <h2>
-          Civil Engineer | Sustainable Materials & Resource Recovery
-        </h2>
-
-        <p>
-          Civil Engineering graduate with research experience in municipal
-          solid waste characterization and resource recovery, along with
-          around three years of professional experience in construction and
-          structural engineering.
-        </p>
-
-        <p>
-          My research interests include sustainable and low-carbon construction
-          materials, industrial hemp-based building materials, circular
-          economy approaches, recovered resources, and the structural
-          performance of innovative sustainable materials.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="#research" class="btn btn-primary">
-            Explore My Research
-          </a>
-
-          <a href="#contact" class="btn btn-outline">
-            Get in Touch
-          </a>
-
-        </div>
-
+      <div class="hero-label">
+        CIVIL ENGINEER | SUSTAINABLE MATERIALS & RESOURCE RECOVERY
       </div>
 
-
-      <div class="profile-box">
-
-        <div class="profile-circle">
-          R
-        </div>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- =========================
-       ABOUT
-  ========================= -->
-
-  <section id="about">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>About Me</h2>
-
-        <p>
-          Civil engineering experience combined with an emerging research
-          focus on sustainable materials and resource recovery.
-        </p>
-
-      </div>
-
-
-      <div class="about-grid">
-
-        <div class="about-text">
-
-          <p>
-            I am a Civil Engineering graduate from the National College of
-            Engineering, Lalitpur, Nepal, affiliated with Tribhuvan University.
-          </p>
-
-          <p>
-            My undergraduate research focused on municipal solid waste
-            characterization and resource recovery in Lalitpur Metropolitan
-            City Ward 14. The research involved household surveys, waste
-            sampling, field investigation, laboratory testing, data analysis,
-            and evaluation of material and energy recovery pathways.
-          </p>
-
-          <p>
-            I have also gained around three years of professional experience
-            in construction and structural engineering, including structural
-            drafting and modeling, ETABS, AutoCAD, load calculations,
-            construction supervision, inspections, and technical
-            documentation.
-          </p>
-
-          <p>
-            My current research interests are focused on sustainable and
-            low-carbon construction materials, particularly industrial
-            hemp-based building materials, waste-derived materials, circular
-            economy approaches, and the structural performance of innovative
-            sustainable materials.
-          </p>
-
-        </div>
-
-
-        <div class="highlights">
-
-          <div class="highlight">
-
-            <h3>🎓 Education</h3>
-
-            <p>
-              Bachelor of Civil Engineering
-            </p>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <h3>🔬 Research Background</h3>
-
-            <p>
-              Municipal solid waste and resource recovery
-            </p>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <h3>🌱 Current Research Direction</h3>
-
-            <p>
-              Sustainable and low-carbon construction materials
-            </p>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <h3>🏗️ Professional Experience</h3>
-
-            <p>
-              Construction and structural engineering
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       RESEARCH INTERESTS
-  ========================= -->
-
-  <section id="research">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Research Interests</h2>
-
-        <p>
-          Areas I am interested in exploring through graduate research.
-        </p>
-
-      </div>
-
-
-      <div class="research-grid">
-
-        <div class="research-card">
-
-          <h3>
-            Sustainable & Low-Carbon Construction Materials
-          </h3>
-
-          <p>
-            Development and evaluation of construction materials with reduced
-            environmental impact and improved resource efficiency.
-          </p>
-
-        </div>
-
-
-        <div class="research-card">
-
-          <h3>
-            Industrial Hemp-Based Building Materials
-          </h3>
-
-          <p>
-            Investigation of hemp-based materials and their potential
-            applications in sustainable construction.
-          </p>
-
-        </div>
-
-
-        <div class="research-card">
-
-          <h3>
-            Circular Economy & Recovered Resources
-          </h3>
-
-          <p>
-            Strategies for material recovery, reuse, recycling and efficient
-            utilization of waste resources.
-          </p>
-
-        </div>
-
-
-        <div class="research-card">
-
-          <h3>
-            Structural Performance of Sustainable Materials
-          </h3>
-
-          <p>
-            Experimental and analytical evaluation of the mechanical and
-            structural performance of innovative sustainable materials.
-          </p>
-
-        </div>
-
-
-        <div class="research-card">
-
-          <h3>
-            Resource Recovery & Waste-Derived Materials
-          </h3>
-
-          <p>
-            Exploring opportunities to transform waste streams into useful
-            resources and construction materials.
-          </p>
-
-        </div>
-
-
-        <div class="research-card">
-
-          <h3>
-            Sustainable Infrastructure & Construction
-          </h3>
-
-          <p>
-            Sustainable approaches to infrastructure development and
-            construction with emphasis on resource efficiency.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       RESEARCH EXPERIENCE
-  ========================= -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Research Experience</h2>
-
-        <p>
-          Undergraduate research in municipal solid waste and resource recovery.
-        </p>
-
-      </div>
-
-
-      <div class="featured">
-
-        <h3>
-          Undergraduate Researcher — Municipal Solid Waste & Resource Recovery
-        </h3>
-
-        <p class="venue">
-          National College of Engineering · 2022–2023
-        </p>
-
-        <h3 style="font-size:1.2rem; margin-top:20px;">
-
-          Resource and Energy Recovery from Municipal Solid Waste –
-          Lalitpur Metropolitan City
-
-        </h3>
-
-        <p>
-          The research characterized municipal solid waste generated in
-          Lalitpur Metropolitan City Ward 14 and evaluated the feasibility of
-          material and energy recovery based on its physical and chemical
-          characteristics.
-        </p>
-
-
-        <div class="stats">
-
-          <div class="stat">
-
-            <strong>81.55%</strong>
-
-            <span>
-              Organic waste
-            </span>
-
-          </div>
-
-
-          <div class="stat">
-
-            <strong>53.24%</strong>
-
-            <span>
-              Moisture content
-            </span>
-
-          </div>
-
-
-          <div class="stat">
-
-            <strong>1.877 kg</strong>
-
-            <span>
-              Waste/day/household
-            </span>
-
-          </div>
-
-
-          <div class="stat">
-
-            <strong>4.133 MJ/kg</strong>
-
-            <span>
-              Organic heat content
-            </span>
-
-          </div>
-
-        </div>
-
-
-        <ul>
-
-          <li>
-            Characterized municipal solid waste through household surveys,
-            waste sampling, field measurements, laboratory analysis and
-            interviews.
-          </li>
-
-          <li>
-            Determined waste generation rate, composition, density, moisture
-            content, calorific value, pH and NPK characteristics.
-          </li>
-
-          <li>
-            Evaluated the feasibility of material and energy recovery from
-            the municipal waste stream.
-          </li>
-
-          <li>
-            Assessed recycling, composting and energy-recovery pathways based
-            on waste characteristics.
-          </li>
-
-          <li>
-            Evaluated the suitability of organic waste for composting and
-            organic fertilizer production.
-          </li>
-
-          <li>
-            Conducted quantitative analysis of recoverable materials,
-            including plastics and paper, and assessed their potential for
-            recycling and reuse.
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       ACADEMIC PROJECTS
-  ========================= -->
-
-  <section id="projects">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Selected Academic Projects</h2>
-
-        <p>
-          Selected engineering, laboratory and analytical projects.
-        </p>
-
-      </div>
-
-
-      <div class="project-list">
-
-
-        <!-- RCC PROJECT -->
-
-        <div class="project">
-
-          <h3>
-            RCC Beam & Concrete Laboratory Investigation
-          </h3>
-
-          <ul>
-
-            <li>
-              Prepared M20 concrete using a 1:1.5:3 nominal mix with a
-              0.50 water–cement ratio.
-            </li>
-
-            <li>
-              Fabricated concrete cube specimens and a reinforced concrete
-              beam using Fe415 reinforcement.
-            </li>
-
-            <li>
-              Conducted slump cone testing to evaluate the workability of
-              the prepared concrete mix.
-            </li>
-
-            <li>
-              Performed Schmidt rebound hammer and Universal Testing Machine
-              (UTM) tests on concrete cubes to evaluate compressive strength.
-            </li>
-
-            <li>
-              Obtained a compressive strength of 28.7 MPa using UTM and
-              approximately 30 MPa using the rebound hammer.
-            </li>
-
-            <li>
-              Tested the reinforced concrete beam to evaluate moment/flexural
-              resistance and failure behavior, observing shear cracking.
-            </li>
-
-            <li>
-              Performed theoretical calculations of reinforcement, neutral
-              axis and moment of resistance.
-            </li>
-
-            <li>
-              Compared analytical calculations with experimental results.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- HYDROPOWER -->
-
-        <div class="project">
-
-          <h3>
-            Hydropower Potential Assessment Using Flow Duration and Power
-            Duration Curves
-          </h3>
-
-          <ul>
-
-            <li>
-              Developed flow duration curves from streamflow records.
-            </li>
-
-            <li>
-              Generated power duration curves to evaluate hydropower
-              generation potential.
-            </li>
-
-            <li>
-              Performed hydrological data analysis using Microsoft Excel.
-            </li>
-
-            <li>
-              Assessed river discharge variability for hydropower planning.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- ETABS -->
-
-        <div class="project">
-
-          <h3>
-            Seismic Performance Evaluation of a 3-Story Reinforced Concrete
-            Frame Using ETABS
-          </h3>
-
-          <ul>
-
-            <li>
-              Developed a 3D ETABS model of an RC moment-resisting frame.
-            </li>
-
-            <li>
-              Applied gravity and lateral seismic loads based on code
-              provisions.
-            </li>
-
-            <li>
-              Performed modal analysis and response spectrum analysis.
-            </li>
-
-            <li>
-              Evaluated interstory drift, base shear and structural response
-              parameters.
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       RESEARCH & LAB METHODS
-  ========================= -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Research & Laboratory Methods</h2>
-
-      </div>
-
-
-      <div class="skills-container">
-
-        <div class="skill-box">
-
-          <h3>Research Methods</h3>
-
-          <div class="skill-tags">
-
-            <span class="skill-tag">Literature Review</span>
-            <span class="skill-tag">Field Investigation</span>
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Technical Writing</span>
-            <span class="skill-tag">Research Documentation</span>
-            <span class="skill-tag">Waste Sampling</span>
-
-          </div>
-
-        </div>
-
-
-        <div class="skill-box">
-
-          <h3>Laboratory Methods</h3>
-
-          <div class="skill-tags">
-
-            <span class="skill-tag">Waste Characterization</span>
-            <span class="skill-tag">Waste Segregation</span>
-            <span class="skill-tag">Moisture Analysis</span>
-            <span class="skill-tag">Density Determination</span>
-            <span class="skill-tag">Calorific Value</span>
-            <span class="skill-tag">pH Analysis</span>
-            <span class="skill-tag">NPK Analysis</span>
-            <span class="skill-tag">Slump Testing</span>
-            <span class="skill-tag">UTM Testing</span>
-            <span class="skill-tag">Rebound Hammer</span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PROFESSIONAL EXPERIENCE
-  ========================= -->
-
-  <section id="experience">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Professional Experience</h2>
-
-        <p>
-          Around three years of experience in construction and structural
-          engineering.
-        </p>
-
-      </div>
-
-
-      <div class="timeline">
-
-
-        <div class="timeline-item">
-
-          <div class="date">
-            2023 – 2024
-          </div>
-
-          <h3>
-            Civil Engineer
-          </h3>
-
-          <p>
-            <strong>
-              Elysian Engineering Consultant & Building Pvt. Ltd.
-            </strong>
-          </p>
-
-          <p>
-            Structural drafting and modeling using ETABS and AutoCAD;
-            assisted with load calculations and technical documentation.
-          </p>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-          <div class="date">
-            2024 – Present
-          </div>
-
-          <h3>
-            Civil Engineer
-          </h3>
-
-          <p>
-            <strong>
-              Pathak Saurab JV & Pabita Nirman Sewa
-            </strong>
-          </p>
-
-          <p>
-            Supervised structural implementation, conducted inspections,
-            monitored construction activities and supported quality
-            compliance.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       EDUCATION
-  ========================= -->
-
-  <section id="education">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Education</h2>
-
-      </div>
-
-
-      <div class="education-box">
-
-        <h3>
-          Bachelor of Civil Engineering
-        </h3>
-
-        <p>
-          <strong>
-            National College of Engineering, Lalitpur, Nepal
-          </strong>
-        </p>
-
-        <p>
-          Tribhuvan University · 2018–2023
-        </p>
-
-        <p>
-          <strong>Percentage:</strong> 72.37%
-        </p>
-
-        <br>
-
-        <p>
-          <strong>Relevant Coursework:</strong>
-        </p>
-
-        <p>
-          Structural Dynamics · Earthquake-Resistant Design · Steel Structures
-          · Reinforced Concrete Structures · Structural Analysis · Finite
-          Element Analysis · Engineering Mathematics · Soil Mechanics ·
-          Foundation Engineering · Engineering Geology · Engineering
-          Hydrology · Fluid Mechanics
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PUBLICATION
-  ========================= -->
-
-  <section id="publication">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Publication</h2>
-
-      </div>
-
-
-      <div class="publication">
-
-        <h3>
-          Characterizing Municipal Solid Waste and Exploring Resource Recovery
-          Potential: A Case Study of Lalitpur Metropolitan City Ward 14
-        </h3>
-
-        <p>
-
-          <strong>Authors:</strong>
-
-          Suraj Maharjan, Rabin Ghimire, Riya Sharma, Sajan Shrestha,
-          Kamal Katwal, Sailendra Raj Giri
-
-        </p>
-
-        <br>
-
-        <p>
-
-          <strong>Venue:</strong>
-
-          Proceedings of the International Conference on Engineering and
-          Technology (ICET 2023), Volume 5.
-
-        </p>
-
-        <br>
-
-        <p>
-          The study investigated municipal solid waste generation,
-          characterization and the feasibility of material and resource
-          recovery from municipal waste generated in Lalitpur Metropolitan
-          City Ward 14.
-        </p>
-
-        <br>
-
-        <a
-          href="https://www.researchgate.net/profile/Kamal-Katwal-2/publication/373328531_Characterizing_Municipal_Solid_Waste_and_Exploring_Resource_Recovery_Potential_A_Case_Study_of_Lalitpur_Metropolitan_City_Ward_14/links/64e60dce0acf2e2b520d773e/Characterizing-Municipal-Solid-Waste-and-Exploring-Resource-Recovery-Potential-A-Case-Study-of-Lalitpur-Metropolitan-City-Ward-14.pdf"
-          target="_blank">
-
-          Read the Conference Paper →
-
+      <h1>Hi! I'm Riya Sharma.</h1>
+
+      <h2>
+        Civil Engineer with a Research Perspective
+      </h2>
+
+      <p>
+        Civil Engineer from Nepal with professional experience in construction
+        and structural engineering, and research experience in municipal solid
+        waste characterization and resource recovery. I am interested in
+        sustainable construction materials, circular economy, waste-derived
+        materials, bio-based materials, and resilient infrastructure.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="Riya_Sharma_CV.pdf"
+           class="btn btn-primary"
+           target="_blank">
+          View Resume
+        </a>
+
+        <a href="#research"
+           class="btn btn-secondary">
+          Explore Research
         </a>
 
       </div>
 
     </div>
 
-  </section>
+
+    <div>
+
+      <div class="profile-placeholder">
+        R
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       TECHNICAL SKILLS
-  ========================= -->
+<!-- =========================
+     ABOUT
+========================= -->
 
-  <section id="skills">
+<section id="about">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="section-title">
+    <div class="section-label">About</div>
 
-        <h2>Technical Skills</h2>
+    <h2 class="section-title">
+      Engineering with a Research Perspective
+    </h2>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p>
+          I am a Civil Engineering graduate from National College of Engineering,
+          affiliated with Tribhuvan University, Nepal, with professional
+          experience in construction engineering, structural modeling,
+          site supervision, engineering documentation, and reinforced concrete
+          structures.
+        </p>
+
+        <p>
+          During my undergraduate studies, I worked on research related to
+          municipal solid waste characterization and resource recovery.
+          This experience gave me practical exposure to field investigation,
+          waste sampling, laboratory analysis, data interpretation and
+          technical research.
+        </p>
+
+        <p>
+          My current research interests are focused on sustainable and
+          low-carbon construction materials, circular economy approaches,
+          bio-based and waste-derived materials, and the structural performance
+          of innovative materials.
+        </p>
+
+        <p>
+          I am interested in pursuing graduate research opportunities where
+          civil engineering can contribute to more sustainable, resource-
+          efficient and resilient infrastructure.
+        </p>
 
       </div>
 
 
-      <div class="skills-container">
+      <div class="about-highlights">
+
+        <div class="highlight">
+          <h3>Civil Engineering</h3>
+          <p>
+            Structural engineering, construction, infrastructure and
+            reinforced concrete.
+          </p>
+        </div>
+
+        <div class="highlight">
+          <h3>Sustainable Engineering</h3>
+          <p>
+            Low-carbon materials, circular economy and resource-efficient
+            construction.
+          </p>
+        </div>
+
+        <div class="highlight">
+          <h3>Research Experience</h3>
+          <p>
+            Municipal solid waste characterization and resource recovery.
+          </p>
+        </div>
+
+        <div class="highlight">
+          <h3>Graduate Research Goals</h3>
+          <p>
+            MASc / MSc / MPhil / PhD research opportunities.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-        <div class="skill-box">
+<!-- =========================
+     RESEARCH INTERESTS
+========================= -->
 
-          <h3>
-            Structural & Civil Engineering
-          </h3>
+<section id="research">
 
-          <div class="skill-tags">
+  <div class="container">
 
-            <span class="skill-tag">ETABS</span>
-            <span class="skill-tag">SAP2000</span>
-            <span class="skill-tag">AutoCAD</span>
-            <span class="skill-tag">Structural Analysis</span>
-            <span class="skill-tag">RC Structures</span>
-            <span class="skill-tag">Seismic Analysis</span>
-            <span class="skill-tag">Site Supervision</span>
-            <span class="skill-tag">Quantity Estimation</span>
-            <span class="skill-tag">BOQ</span>
+    <div class="section-label">Research Interests</div>
 
-          </div>
+    <h2 class="section-title">
+      Areas I Want to Explore
+    </h2>
+
+    <p class="section-intro">
+      My interests connect civil engineering, sustainable materials,
+      environmental engineering and resource recovery.
+    </p>
+
+
+    <div class="research-grid">
+
+      <div class="research-card">
+
+        <div class="research-icon">♻️</div>
+
+        <h3>
+          Circular Economy & Resource Recovery
+        </h3>
+
+        <p>
+          Recovery of useful resources from waste streams and engineering
+          approaches that support circular material flows.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <div class="research-icon">🏗️</div>
+
+        <h3>
+          Sustainable Construction Materials
+        </h3>
+
+        <p>
+          Low-carbon, bio-based, biomass-derived, recycled and waste-derived
+          materials for sustainable construction.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <div class="research-icon">🌱</div>
+
+        <h3>
+          Low-Carbon Infrastructure
+        </h3>
+
+        <p>
+          Engineering solutions that reduce environmental impact while
+          maintaining performance, durability and resilience.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <div class="research-icon">🗑️</div>
+
+        <h3>
+          Municipal Solid Waste
+        </h3>
+
+        <p>
+          Waste characterization, composting, recycling, resource recovery
+          and sustainable municipal waste management.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <div class="research-icon">🌾</div>
+
+        <h3>
+          Bio-Based Materials
+        </h3>
+
+        <p>
+          Exploring materials derived from biomass and renewable resources
+          for civil engineering and building applications.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <div class="research-icon">🌉</div>
+
+        <h3>
+          Resilient Infrastructure
+        </h3>
+
+        <p>
+          Structural and infrastructure resilience, monitoring and engineering
+          approaches for safer and more sustainable systems.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED RESEARCH
+========================= -->
+
+<section class="featured-research">
+
+  <div class="container">
+
+    <div class="section-label">Featured Research</div>
+
+    <h2 class="section-title">
+      Municipal Solid Waste Characterization & Resource Recovery Potential
+    </h2>
+
+    <div class="research-feature-box">
+
+      <h3>
+        Undergraduate Research Project
+      </h3>
+
+      <p>
+        My undergraduate research investigated municipal solid waste in
+        Lalitpur Metropolitan City Ward 14 and explored opportunities for
+        composting, recycling, material recovery and energy recovery.
+      </p>
+
+      <p>
+        The study examined household waste generation, physical and chemical
+        characteristics, moisture content, calorific value, nutrient
+        composition and potential resource recovery pathways.
+      </p>
+
+
+      <div class="stats">
+
+        <div class="stat">
+          <strong>0.473</strong>
+          <span>kg/person/day</span>
+        </div>
+
+        <div class="stat">
+          <strong>81.55%</strong>
+          <span>Organic fraction</span>
+        </div>
+
+        <div class="stat">
+          <strong>53.24%</strong>
+          <span>Moisture content</span>
+        </div>
+
+        <div class="stat">
+          <strong>100</strong>
+          <span>Household samples</span>
+        </div>
+
+      </div>
+
+
+      <a
+        href="https://www.researchgate.net/profile/Kamal-Katwal-2/publication/373328531_Characterizing_Municipal_Solid_Waste_and_Exploring_Resource_Recovery_Potential_A_Case_Study_of_Lalitpur_Metropolitan_City_Ward_14/links/64e60dce0acf2e2b520d773e/Characterizing-Municipal-Solid-Waste-and-Exploring-Resource-Recovery-Potential-A-Case-Study-of-Lalitpur-Metropolitan-City-Ward-14.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary">
+        View Publication
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROSPECTIVE RESEARCH
+========================= -->
+
+<section class="future-research">
+
+  <div class="container">
+
+    <div class="section-label">Prospective Research</div>
+
+    <h2 class="section-title">
+      Future Research Directions
+    </h2>
+
+    <p class="section-intro">
+      Building on my undergraduate research and engineering experience, I am
+      interested in developing research that connects sustainable materials,
+      resource recovery and structural performance.
+    </p>
+
+
+    <div class="future-grid">
+
+      <div class="future-card">
+
+        <h3>
+          Industrial Hemp & Hemp-Based Building Materials
+        </h3>
+
+        <p>
+          Exploring hemp-based construction materials, including hempcrete and
+          other bio-based composites, with emphasis on material properties,
+          sustainability, durability and engineering applications.
+        </p>
+
+      </div>
+
+
+      <div class="future-card">
+
+        <h3>
+          Waste-Derived Construction Materials
+        </h3>
+
+        <p>
+          Investigating the potential use of agricultural, industrial and
+          municipal waste streams as alternative resources for construction
+          materials.
+        </p>
+
+      </div>
+
+
+      <div class="future-card">
+
+        <h3>
+          Low-Carbon & Circular Construction
+        </h3>
+
+        <p>
+          Studying approaches that reduce embodied environmental impacts while
+          improving resource efficiency and supporting circular construction
+          systems.
+        </p>
+
+      </div>
+
+
+      <div class="future-card">
+
+        <h3>
+          Structural Performance of Sustainable Materials
+        </h3>
+
+        <p>
+          Exploring mechanical performance, durability and structural behavior
+          of innovative sustainable materials used in civil engineering.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-label">Professional Experience</div>
+
+    <h2 class="section-title">
+      Engineering Experience
+    </h2>
+
+    <p class="section-intro">
+      Around three years of professional experience in construction,
+      structural engineering, drafting, modeling, supervision and
+      engineering documentation.
+    </p>
+
+
+    <div class="timeline">
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Jul 2025 – Present
+        </div>
+
+        <h3>Civil Engineer</h3>
+
+        <h4>Saurab Nirman Sewa</h4>
+
+        <p>
+          Construction engineering, site supervision, structural and
+          project-related engineering responsibilities.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Dec 2024 – Jun 2025
+        </div>
+
+        <h3>Civil Engineer</h3>
+
+        <h4>Pathak-Saurab JV</h4>
+
+        <p>
+          Engineering and construction-related responsibilities, site
+          coordination and technical documentation.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Jun 2024 – Nov 2024
+        </div>
+
+        <h3>Civil Engineer</h3>
+
+        <h4>Pabita Nirman Sewa</h4>
+
+        <p>
+          Construction engineering, supervision and project coordination.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Jan 2024 – Jun 2024
+        </div>
+
+        <h3>Civil Engineer</h3>
+
+        <h4>Pabita-Saurab JV</h4>
+
+        <p>
+          Engineering and construction project responsibilities.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          Jul 2023 – Jan 2024
+        </div>
+
+        <h3>Civil Engineer</h3>
+
+        <h4>
+          Elysian Engineering Consultant & Building Pvt. Ltd.
+        </h4>
+
+        <p>
+          AutoCAD drafting, ETABS modeling, structural analysis,
+          load calculations and engineering documentation.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section id="education">
+
+  <div class="container">
+
+    <div class="section-label">Education</div>
+
+    <h2 class="section-title">
+      Academic Background
+    </h2>
+
+
+    <div class="education-card">
+
+      <h3>
+        Bachelor of Civil Engineering
+      </h3>
+
+      <h4>
+        National College of Engineering (NCE)
+        · Tribhuvan University, Nepal
+      </h4>
+
+      <p>
+        <strong>2018 – 2023</strong>
+      </p>
+
+      <p>
+        Academic interests included structural engineering,
+        earthquake-resistant design, soil mechanics, foundation engineering,
+        environmental engineering, numerical methods, construction management
+        and sustainable infrastructure.
+      </p>
+
+      <p>
+        <strong>Final percentage:</strong> 72.37%
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-label">Technical Skills</div>
+
+    <h2 class="section-title">
+      Engineering Toolkit
+    </h2>
+
+
+    <div class="skill-groups">
+
+
+      <div class="skill-group">
+
+        <h3>Engineering Software</h3>
+
+        <div class="tags">
+
+          <span class="tag">AutoCAD</span>
+          <span class="tag">ETABS</span>
+          <span class="tag">SAP2000</span>
+          <span class="tag">ArcGIS</span>
+          <span class="tag">Google Earth</span>
 
         </div>
 
+      </div>
 
-        <div class="skill-box">
 
-          <h3>
-            Data & Digital Tools
-          </h3>
+      <div class="skill-group">
 
-          <div class="skill-tags">
+        <h3>Technical</h3>
 
-            <span class="skill-tag">MS Excel</span>
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C</span>
-            <span class="skill-tag">ArcGIS</span>
-            <span class="skill-tag">Google Earth</span>
-            <span class="skill-tag">Data Analysis</span>
+        <div class="tags">
 
-          </div>
+          <span class="tag">Structural Analysis</span>
+          <span class="tag">RC Structures</span>
+          <span class="tag">Seismic Analysis</span>
+          <span class="tag">Quantity Estimation</span>
+          <span class="tag">BOQ</span>
+          <span class="tag">Site Supervision</span>
 
         </div>
 
+      </div>
 
-        <div class="skill-box">
 
-          <h3>
-            Research Skills
-          </h3>
+      <div class="skill-group">
 
-          <div class="skill-tags">
+        <h3>Research & Computing</h3>
 
-            <span class="skill-tag">Literature Review</span>
-            <span class="skill-tag">Technical Writing</span>
-            <span class="skill-tag">Field Investigation</span>
-            <span class="skill-tag">Laboratory Investigation</span>
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Research Documentation</span>
+        <div class="tags">
 
-          </div>
+          <span class="tag">Python</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">MS Excel</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Research Writing</span>
+          <span class="tag">Literature Review</span>
 
         </div>
 
+      </div>
 
-        <div class="skill-box">
 
-          <h3>
-            Waste & Materials Research
-          </h3>
+      <div class="skill-group">
 
-          <div class="skill-tags">
+        <h3>Research Methods</h3>
 
-            <span class="skill-tag">Waste Characterization</span>
-            <span class="skill-tag">Resource Recovery</span>
-            <span class="skill-tag">Material Recovery</span>
-            <span class="skill-tag">Composting</span>
-            <span class="skill-tag">Waste-to-Energy</span>
-            <span class="skill-tag">Concrete Testing</span>
+        <div class="tags">
 
-          </div>
+          <span class="tag">Field Investigation</span>
+          <span class="tag">Waste Sampling</span>
+          <span class="tag">Laboratory Testing</span>
+          <span class="tag">Waste Characterization</span>
+          <span class="tag">Resource Recovery</span>
+          <span class="tag">Technical Documentation</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-group">
+
+        <h3>Concrete & Materials</h3>
+
+        <div class="tags">
+
+          <span class="tag">Slump Testing</span>
+          <span class="tag">UTM Testing</span>
+          <span class="tag">Rebound Hammer</span>
+          <span class="tag">Concrete Testing</span>
+          <span class="tag">Material Characterization</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-group">
+
+        <h3>Research Areas</h3>
+
+        <div class="tags">
+
+          <span class="tag">Sustainable Materials</span>
+          <span class="tag">Circular Economy</span>
+          <span class="tag">Bio-Based Materials</span>
+          <span class="tag">Waste-Derived Materials</span>
+          <span class="tag">Sustainable Infrastructure</span>
 
         </div>
 
@@ -1634,133 +1501,199 @@
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       HONORS
-  ========================= -->
+<!-- =========================
+     PUBLICATION
+========================= -->
 
-  <section>
+<section id="publications">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="section-title">
+    <div class="section-label">Research Output</div>
 
-        <h2>Honors & Achievements</h2>
+    <h2 class="section-title">
+      Publication
+    </h2>
+
+
+    <div class="publication-card">
+
+      <div class="publication-type">
+        CONFERENCE PAPER
+      </div>
+
+      <h3>
+        Characterizing Municipal Solid Waste and Exploring Resource Recovery
+        Potential: A Case Study of Lalitpur Metropolitan City Ward 14
+      </h3>
+
+      <p>
+        <strong>
+          International Conference on Engineering & Technology (KEC Conference),
+          Volume V, 2023.
+        </strong>
+      </p>
+
+      <p>
+        Sharma, R., et al. The study investigated municipal solid waste
+        generation, physical and chemical characterization, organic content,
+        moisture, calorific value, nutrient composition and resource recovery
+        possibilities in Lalitpur Metropolitan City Ward 14.
+      </p>
+
+      <a
+        href="https://www.researchgate.net/profile/Kamal-Katwal-2/publication/373328531_Characterizing_Municipal_Solid_Waste_and_Exploring_Resource_Recovery_Potential_A_Case_Study_of_Lalitpur_Metropolitan_City_Ward_14/links/64e60dce0acf2e2b520d773e/Characterizing-Municipal-Solid-Waste-and-Exploring-Resource-Recovery-Potential-A-Case-Study-of-Lalitpur-Metropolitan-City-Ward-14.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary">
+        Read Research →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     HONORS
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-label">Recognition</div>
+
+    <h2 class="section-title">
+      Honors & Credentials
+    </h2>
+
+
+    <div class="honors">
+
+      <div class="honor">
+
+        <h3>
+          Excellence Award
+        </h3>
+
+        <p>
+          Academic Scholarship — National College of Engineering, 2023
+        </p>
 
       </div>
 
 
-      <div class="honors">
+      <div class="honor">
 
-        <div class="honor">
+        <h3>
+          Registered Engineer
+        </h3>
 
-          <strong>
-            Excellence Award – Academic Scholarship
-          </strong>
+        <p>
+          General Registered Engineer — Nepal Engineering Council
+        </p>
 
-          <br>
-
-          National College of Engineering, 2023
-
-        </div>
+      </div>
 
 
-        <div class="honor">
+      <div class="honor">
 
-          <strong>
-            General Registered Engineer
-          </strong>
+        <h3>
+          First Runner-Up
+        </h3>
 
-          <br>
-
-          Nepal Engineering Council
-
-        </div>
-
-
-        <div class="honor">
-
-          <strong>
-            First Runner-Up – Inter-College Paper Bridge Competition
-          </strong>
-
-        </div>
+        <p>
+          Inter-College Paper Bridge Competition
+        </p>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       REFERENCES
-  ========================= -->
+<!-- =========================
+     CV
+========================= -->
 
-  <section>
+<section class="cv-section">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="section-title">
+    <div class="cv-box">
 
-        <h2>Academic References</h2>
-
+      <div class="section-label">
+        Curriculum Vitae
       </div>
 
+      <h2 class="section-title">
+        Interested in my academic and professional background?
+      </h2>
 
-      <div class="reference-note">
+      <p>
+        My full CV includes my education, professional experience,
+        research experience, academic projects, technical skills,
+        publications and references.
+      </p>
 
-        <p>
-          Academic references are available upon request.
-        </p>
-
-        <br>
-
-        <p>
-          <strong>Mr. Kamal Katwal</strong> — Senior Lecturer,
-          Department of Civil Engineering, National College of Engineering,
-          Nepal
-        </p>
-
-        <br>
-
-        <p>
-          <strong>Mr. Vimesh Paudel</strong> — Lecturer,
-          Ara Institute of Canterbury, New Zealand
-        </p>
-
-        <br>
-
-        <p>
-          <strong>Mr. Shailendra Raj Giri</strong> — PhD Student,
-          University of Newcastle, Australia
-        </p>
-
-      </div>
+      <a
+        href="Riya_Sharma_CV.pdf"
+        target="_blank"
+        class="btn btn-primary">
+        View Full Resume
+      </a>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       CONTACT
-  ========================= -->
+<!-- =========================
+     CONTACT
+========================= -->
 
-  <section id="contact">
+<section id="contact">
 
-    <div class="container contact">
+  <div class="container">
 
-      <div class="section-title">
+    <div class="section-label">Contact</div>
 
-        <h2>Let's Connect</h2>
+    <h2 class="section-title">
+      Let's Connect
+    </h2>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-info">
+
+        <h3>
+          Academic & Research Connections
+        </h3>
 
         <p>
-          I am interested in connecting with researchers, academics and
-          professionals working in sustainable construction materials,
-          circular economy, resource recovery and related areas.
+          I am interested in connecting with researchers, engineers,
+          academics and potential research collaborators.
+        </p>
+
+        <p>
+          For graduate research opportunities, academic discussions,
+          research collaboration or professional connections, please feel
+          free to get in touch.
         </p>
 
       </div>
@@ -1768,119 +1701,95 @@
 
       <div class="contact-info">
 
+        <h3>
+          Get in Touch
+        </h3>
+
         <p>
           <strong>Email:</strong>
-
           <a href="mailto:riya53552sharma@gmail.com">
             riya53552sharma@gmail.com
           </a>
         </p>
 
-
         <p>
-          <strong>Location:</strong>
-          Bharatpur, Nepal
+          <strong>Location:</strong> Nepal
         </p>
 
+        <div class="contact-links">
 
-        <p>
-          <strong>Phone:</strong>
-          +977-9862253552
-        </p>
+          <a
+            href="https://www.linkedin.com/in/riya-sharma-502234305/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link">
+            LinkedIn
+          </a>
 
-      </div>
+          <a
+            href="https://scholar.google.com/citations?user=z1x8-E8AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link">
+            Google Scholar
+          </a>
 
+          <a
+            href="https://www.researchgate.net/profile/Riya-Sharma-48/research"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link">
+            ResearchGate
+          </a>
 
-      <div class="social-links">
+          <a
+            href="https://github.com/Riya-Sharma"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link">
+            GitHub
+          </a>
 
-
-        <a
-          class="social-link"
-          href="https://www.linkedin.com/in/riya-sharma-502234305/"
-          target="_blank">
-
-          LinkedIn
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://www.researchgate.net/profile/Riya-Sharma-48/research"
-          target="_blank">
-
-          ResearchGate
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://scholar.google.com/citations?user=z1x8-E8AAAAJ&hl=en"
-          target="_blank">
-
-          Google Scholar
-
-        </a>
+        </div>
 
       </div>
 
     </div>
 
-  </section>
+
+    <div style="margin-top:45px;">
+
+      <h3 style="color:#173f35; margin-bottom:10px;">
+        Research Interests
+      </h3>
+
+      <p style="color:#65746f;">
+        Sustainable construction materials, waste-derived materials,
+        circular economy, municipal solid waste management, resource
+        recovery, bio-based materials, industrial hemp-based materials,
+        resilient infrastructure and related civil/environmental
+        engineering research.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
-  <footer>
+<footer>
 
-    <p>
-      © 2026 Riya Sharma · Civil Engineer & Researcher
-    </p>
+  <p>
+    © 2026 Riya Sharma · Civil Engineer | Sustainable Materials & Resource Recovery
+  </p>
 
-    <p>
-      Sustainable Materials · Circular Economy · Resource Recovery
-    </p>
-
-  </footer>
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
-
-  <script>
-
-    function toggleMenu() {
-
-      document
-        .getElementById("navLinks")
-        .classList
-        .toggle("active");
-
-    }
-
-
-    document
-      .querySelectorAll(".nav-links a")
-      .forEach(function(link) {
-
-        link.addEventListener("click", function() {
-
-          document
-            .getElementById("navLinks")
-            .classList
-            .remove("active");
-
-        });
-
-      });
-
-  </script>
+</footer>
 
 
 </body>
-
 </html>
